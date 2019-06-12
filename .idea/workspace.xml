@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e52ea293-f953-4f97-a33c-f92e065f3184" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/in/at/collections/ListDemo.groovy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/in/at/collections/SetDemo.groovy" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -17,15 +17,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/in/at/interfacedemo/Vehicle.groovy">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="22" column="18" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/in/at/interfacedemo/Car.groovy">
           <provider selected="true" editor-type-id="text-editor">
@@ -65,17 +56,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/in/at/overriding/ChildClass.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="401">
+            <state relative-caret-position="408">
               <caret line="24" selection-start-line="24" selection-end-line="24" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/in/at/collections/ListDemo.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="119" lean-forward="true" selection-start-line="119" selection-end-line="119" />
+            <state relative-caret-position="350">
+              <caret line="119" selection-start-line="119" selection-end-line="119" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/in/at/collections/SetDemo.groovy">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1632">
+              <caret line="96" lean-forward="true" selection-start-line="96" selection-end-line="96" />
             </state>
           </provider>
         </entry>
@@ -158,12 +158,13 @@
         <option value="$PROJECT_DIR$/src/in/at/overriding/ParentClass.groovy" />
         <option value="$PROJECT_DIR$/src/in/at/overriding/ChildClass.groovy" />
         <option value="$PROJECT_DIR$/src/in/at/collections/ListDemo.groovy" />
+        <option value="$PROJECT_DIR$/src/in/at/collections/SetDemo.groovy" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="57" />
-    <option name="y" value="18" />
+    <option name="x" value="79" />
+    <option name="y" value="10" />
     <option name="width" value="1086" />
     <option name="height" value="684" />
   </component>
@@ -237,6 +238,13 @@
             </path>
             <path>
               <item name="Groovy_Udemy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="My_Project_Workspace" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="at" type="462c0819:PsiDirectoryNode" />
+              <item name="collections" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Groovy_Udemy" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
@@ -270,20 +278,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.ListDemo">
-    <configuration name="Car (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="in.at.interfacedemo.Car" />
-      <module name="Groovy_Udemy" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="in.at.interfacedemo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.SetDemo">
     <configuration name="ChildClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="in.at.overriding.ChildClass" />
       <module name="Groovy_Udemy" />
@@ -336,13 +331,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SetDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="in.at.collections.SetDemo" />
+      <module name="Groovy_Udemy" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="in.at.collections.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SetDemo" />
         <item itemvalue="Application.ListDemo" />
         <item itemvalue="Application.ChildClass" />
         <item itemvalue="Application.MethodsOverloadingDemo" />
         <item itemvalue="Application.LuxuryCar" />
-        <item itemvalue="Application.Car (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -364,14 +372,21 @@
       <option name="project" value="LOCAL" />
       <updated>1559820454897</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="List-Collection added">
+      <created>1559897986704</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1559897986704</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-2" y="7" width="1086" height="684" extended-state="0" />
+    <frame x="56" y="54" width="1086" height="684" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3674464" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.37524366" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -403,7 +418,8 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="First Commit - Groovy Learning" />
-    <option name="LAST_COMMIT_MESSAGE" value="First Commit - Groovy Learning" />
+    <MESSAGE value="List-Collection added" />
+    <option name="LAST_COMMIT_MESSAGE" value="List-Collection added" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -709,6 +725,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/in/at/overriding/ChildClass.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/in/at/abstractdemo/Car.groovy">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -730,17 +753,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/in/at/overriding/ChildClass.groovy">
+    <entry file="file://$PROJECT_DIR$/src/in/at/collections/ListDemo.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="401">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
+        <state relative-caret-position="350">
+          <caret line="119" selection-start-line="119" selection-end-line="119" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/in/at/collections/ListDemo.groovy">
+    <entry file="file://$PROJECT_DIR$/src/in/at/collections/SetDemo.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="119" lean-forward="true" selection-start-line="119" selection-end-line="119" />
+        <state relative-caret-position="1632">
+          <caret line="96" lean-forward="true" selection-start-line="96" selection-end-line="96" />
         </state>
       </provider>
     </entry>
