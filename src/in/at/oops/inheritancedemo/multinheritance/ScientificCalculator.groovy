@@ -3,7 +3,7 @@ package in.at.oops.inheritancedemo.multinheritance
 //Multi-Level-Inheritanca
 // Class A implements method 1,2
 // Class B extends Class A and implements methods 3,4 -> can access 1,2,3,4
-// Class C extends Class V and implements methods 5,6 -> can access 1,2,3,4,5,6
+// Class C extends Class B and implements methods 5,6 -> can access 1,2,3,4,5,6
 
 class ScientificCalculator extends AdvancedCalculator {
 
