@@ -1,0 +1,30 @@
+An Exception is event which occurs during execution
+of the program, that disrupts the normal flow
+of the programm instructions. It indicates conditions
+that a application might try to catch
+
+
+An Error indicates serios problem that a application
+should not try to catch
+
+
+VirtualMachineError
+AssertionError
+StackOverFlowError
+
+
+
+Checked Exception:
+- occurs during compilations (only JAVA not GROOVY)
+
+IOException
+FileNotFoundException
+SQL Exception
+
+
+Unchecked Exception:
+- occurs during runtime
+
+ArithmeticException
+NullPointerException
+ArrayIndexOutOfBoundsException
