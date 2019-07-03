@@ -18,5 +18,7 @@
         <jarDirectory url="file://C:/groovy/apache-groovy-sdk-2.5.6/groovy-2.5.6/lib/extras-jaxb" recursive="false" />
       </library>
     </orderEntry>
+    <orderEntry type="library" name="poi-4.1" level="project" />
+    <orderEntry type="library" name="poi-4.1.0" level="project" />
   </component>
 </module>
