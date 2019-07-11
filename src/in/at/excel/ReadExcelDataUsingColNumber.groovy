@@ -65,7 +65,7 @@ class ReadExcelDataUsingColNumber {
         println("UserName from Excel Sheet is: $passWord")
 
         dateCreated = eat.getCellData("Credentials",3,2)
-        println("UserName from Excel Sheet is: $dateCreated")
+        println("Date from Excel Sheet is: $dateCreated")
 
 
     }

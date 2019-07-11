@@ -117,6 +117,56 @@ class ExcelAPITest {
     }
 
 
+    def getCellData(sheetName, String colName, rowNum){
+        try {
+
+            def cellValue
+            int colNum
+            sheet = workbook.getSheet(sheetName)
+
+            row = sheet.getRow(0)
+
+            for(i in 0..row.getLastCellNum() - 1){
+                if(row.getCell(i).getStringCellValue().trim() == colName)
+                    colNum = i
+            }
+
+            row = sheet.getRow(rowNum -1)
+            cell = row.getCell(colNum)
+
+
+            switch (cell.cellTypeEnum) {
+                case CellType.STRING:
+                    cellValue = cell.getStringCellValue()
+                    break
+                case { CellType.NUMERIC || CellType.FORMULA }:
+                    if (DateUtil.isCellDateFormatted(cell)) {
+                        DateFormat df = new SimpleDateFormat("dd/MM/yyyy")
+                        Date date = cell.getDateCellValue()
+                        cellValue = df.format(date)
+                    } else {
+                        cellValue = cell.getNumericCellValue()
+                    }
+                    break
+                case CellType.BLANK:
+                    cellValue = ""
+                    break
+
+                default:
+                    cellValue = cell.getBooleanCellValue()
+                    break
+            }
+
+            cellValue
+
+        }
+        catch (Exception e) {
+            e.printStackTrace()
+            "row $rowNum or colNum $colNum does not exist in the excel."
+        }
+    }
+
+
 
 
 
