@@ -48,7 +48,7 @@ class ExcelAPITest {
     XSSFCell cell = null
     def xlFilePath
     FileInputStream fis = null
-
+    FileOutputStream fos = null
 
 
     //creating a paramterised constructor
@@ -165,6 +165,80 @@ class ExcelAPITest {
             "row $rowNum or colNum $colNum does not exist in the excel."
         }
     }
+
+    def setCellData(sheetName, int colNumber, rowNum, value){
+        try{
+            sheet = workbook.getSheet(sheetName)
+            row = sheet.getRow(rowNum)
+
+            if (row == null)
+                row = sheet.createRow(rowNum)
+
+            cell = row.getCell(colNumber)
+
+            if (cell == null)
+                cell = row.createCell(colNumber)
+
+            cell.setCellValue(value)
+
+            fos = new FileOutputStream(xlFilePath)
+            workbook.write(fos)
+            fos.close()
+
+
+        }
+        catch (Exception e){
+            e.printStackTrace()
+            false
+        }
+        true
+
+    }
+
+
+    def setCellData(sheetName, String colName, rowNum, value){
+        try{
+            sheet = workbook.getSheet(sheetName)
+            row = sheet.getRow(0)
+
+            def colNum =1
+
+            //Searching for RowName "Result"
+            for (i in 0..row.getLastCellNum() -1) {
+                if (row.getCell(i).getStringCellValue().trim() == colName)
+                    colNum = i
+            }
+
+
+            row = sheet.getRow(rowNum - 1)
+
+
+            if (row == null)
+                row = sheet.createRow(rowNum-1)
+
+            cell = row.getCell(colNum)
+
+            if (cell == null)
+                cell = row.createCell(colNum)
+
+            cell.setCellValue(value)
+
+            fos = new FileOutputStream(xlFilePath)
+            workbook.write(fos)
+            fos.close()
+
+
+        }
+        catch (Exception e){
+            e.printStackTrace()
+            false
+        }
+        true
+
+    }
+
+
+
 
 
 

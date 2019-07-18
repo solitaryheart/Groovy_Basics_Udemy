@@ -23,7 +23,7 @@ class ReadExcelDataUsingColNumber {
 
     static main(args){
 
-        def fis = new FileInputStream("C:\\udemy\\Groovy\\My_Project_Workspace\\src\\in\\at\\files\\TestData.xlsx")
+        def fis = new FileInputStream("C:\\udemy\\Groovy\\8_Apache_POI_Excel\\1_Get_Row_And_Column_Count\\TestData.xlsx")
         def workbook = new XSSFWorkbook(fis)
         def sheet = workbook.getSheet("Credentials")
 
@@ -53,7 +53,7 @@ class ReadExcelDataUsingColNumber {
 
         println("-------------------------------")
         //def eat = new ExcelAPITest("C:\\udemy\\Groovy\\My_Project_Workspace\\src\\in\\at\\files\\TestData.xlsx")
-        def eat = new ExcelAPITest("C:\\udemy\\Groovy\\My_Project_Workspace\\src\\in\\at\\files\\TestData.xlsx")
+        def eat = new ExcelAPITest("C:\\udemy\\Groovy\\8_Apache_POI_Excel\\1_Get_Row_And_Column_Count\\TestData.xlsx")
 
 
         println("First User in Row 1 is: ")

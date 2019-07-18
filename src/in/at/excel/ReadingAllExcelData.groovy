@@ -12,7 +12,7 @@ class ReadingAllExcelData {
 
     static main(args){
 
-        def eat = new ExcelAPITest("C:\\udemy\\Groovy\\My_Project_Workspace\\src\\in\\at\\files\\TestData.xlsx")
+        def eat = new ExcelAPITest("C:\\udemy\\Groovy\\8_Apache_POI_Excel\\1_Get_Row_And_Column_Count\\TestData.xlsx")
 
         //Getting Row and Column Count
 
